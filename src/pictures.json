@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "name": "Ariel",
+        "image": "/images/ariel.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Aurora",
+        "image": "/images/aurora.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Beast",
+        "image": "/images/beast.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Belle",
+        "image": "/images/belle.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Eric",
+        "image": "/images/eric.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Flynn Rider",
+        "image": "/images/flynnrider.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Mulan",
+        "image": "/images/mulan.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Naveen",
+        "image": "/images/naveen.jpg"
+    },
+    {
+        "id": 9,
+        "name": "Phillip",
+        "image": "/images/phillip.jpg"
+    },
+    {
+        "id": 10,
+        "name": "Rapunzel",
+        "image": "/images/rapunzel.jpg"
+    },
+    {
+        "id": 11,
+        "name": "Shang",
+        "image": "/images/shang.jpg"
+    },
+    {
+        "id": 12,
+        "name": "Tiana",
+        "image": "/images/tiana.jpg"
+    }
+]
