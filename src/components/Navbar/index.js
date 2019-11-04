@@ -10,7 +10,7 @@ function Navbar (props) {
         <div className="nav-wrapper">
             <div className="row">
             <div className="col s4">
-            <a href="#" className="brand-logo">Memory Clicky Game</a>
+            <h1 className="brand-logo">Memory Clicky Game</h1>
                 </div>
                 <div className="col navtext s4">
                     <ScoreMsg scoreMsg={props.scoreMsg}/>
