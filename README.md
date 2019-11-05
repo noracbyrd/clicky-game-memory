@@ -20,6 +20,7 @@ The game also keeps track of the high score (which can't go above twelve as ther
 ![top score](public/images/screenshots/topscore.jpg)
 
 The navbar also displays a message that changes based on if the user clicks a hitherto unclicked image or if it's one they've clicked before. 
+
 ![unclicked image](public/images/screenshots/newclick.jpg) vs. ![hitherto clicked image](public/images/screenshots/oldclick.jpg)
 
 
