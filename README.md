@@ -24,6 +24,7 @@ The navbar also displays a message that changes based on if the user clicks a hi
 * The method used to shuffle the images is a version of the sort method - the compare function uses a random number. On a randomness scale the shuffle could definitely be more random, ha!
 * I could probably clean up the if statements a bit with more functions like the playerWins function.
 * It would be nice to have something more dramatic happen when the player loses a round than just the alert. I'm open to suggestions!
+* The mobile version is a bit of a clusterfumble. Definite room for improvement - I should probably add media queries to make the images extra small when displayed on a tiny screen (and, you know, fix the way the navbar and hero message are displaying...)
 
 ### P.S.
 I definitely don't own any of these images but was using them for educational purposes ;)
