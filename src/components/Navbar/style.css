@@ -4,3 +4,13 @@
 .nav-wrapper{
     background-color: #a27ee6
 }
+#gameTitle{
+    margin: auto;
+    margin-top: 10px;
+    font-family: 'Chewy', cursive;
+    font-size: 40px;
+}
+#scoreMessage{
+    font-family: 'Chewy', cursive;
+    font-size: 1.25rem;
+}

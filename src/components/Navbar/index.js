@@ -10,9 +10,9 @@ function Navbar (props) {
         <div className="nav-wrapper">
             <div className="row">
             <div className="col s4">
-            <h1 className="brand-logo">Memory Clicky Game</h1>
+            <h1 className="brand-logo" id="gameTitle">Memory Clicky Game</h1>
                 </div>
-                <div className="col navtext s4">
+                <div className="col navtext s4" id="scoreMessage">
                     <ScoreMsg scoreMsg={props.scoreMsg}/>
                 </div>
                 <div className="col navtext s4">

@@ -35,7 +35,7 @@ class App extends Component {
         newState.clickedPictures = [];
         newState.topScore = this.state.scoreCounter;
         newState.scoreCounter = 0;
-        newState.scoreMsg = "Sorry, you already clicked that one! Starting over..."
+        newState.scoreMsg = "Sorry, you already clicked that one! Starting over.  .  ."
         newState.pictures = this.shuffle(pictures);
       }
       else {

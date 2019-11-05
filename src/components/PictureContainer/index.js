@@ -6,7 +6,7 @@ import Picture from "../Picture"
 function PictureContainer (props) {
     return (
         <div className="container">
-            <table>
+            <table id="table">
                 <tbody>
                     <tr>
                    <Picture onClick={props.handlePictureClick} pictures={props.pictures} pictureid={props} clicked={props.clicked}/>
