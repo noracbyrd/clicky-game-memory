@@ -7,10 +7,8 @@ function PictureContainer (props) {
     return (
         <div className="container">
             <table id="table">
-                <tbody>
-                    <tr>
+                <tbody id="tbody">
                    <Picture onClick={props.handlePictureClick} pictures={props.pictures} pictureid={props} clicked={props.clicked}/>
-                  </tr>
                 </tbody>
             </table>
         </div>

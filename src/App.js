@@ -25,11 +25,11 @@ class App extends Component {
   }
 
   handlePictureClick = click => {
-    console.log(this.state.pictureid)
-    console.log("I'm clicked")
     const newState = {};
     const pictureid = parseInt(click.target.id);
-    console.log(pictureid);
+    // if (this.state.scoreCounter.length===11){
+    //   alert("Congrats! You guessed them all!")
+    // }
     if (this.state.pictureid === pictureid || this.state.clickedPictures.includes(pictureid)) {
       if (this.state.scoreCounter > this.state.topScore) {
         newState.clickedPictures = [];
@@ -45,7 +45,7 @@ class App extends Component {
         newState.pictures = this.shuffle(pictures);
       }
     } else {
-      if (this.state.scoreCounter >= this.state.topScore) {
+     if (this.state.scoreCounter >= this.state.topScore) {
         this.state.clickedPictures.push(pictureid);
         newState.clickedPictures = this.state.clickedPictures;
         newState.clicked = true;
@@ -53,7 +53,16 @@ class App extends Component {
         newState.scoreCounter = this.state.scoreCounter + 1;
         newState.pictureid = pictureid;
         newState.topScore = newState.scoreCounter;
+        if (newState.scoreCounter === 12){
+          alert("Congrats, you guessed them all!")
+          newState.clickedPictures = [];
+          newState.scoreCounter = 0;
+          newState.scoreMsg = "Play again! Reshuffling now...";
+          newState.pictures = this.shuffle(pictures);
+
+        } else{
         newState.pictures = this.shuffle(pictures)
+        }
       }
       else {
         this.state.clickedPictures.push(pictureid);
@@ -62,12 +71,21 @@ class App extends Component {
         newState.scoreMsg = "Good job, you didn't have that one yet!";
         newState.scoreCounter = this.state.scoreCounter + 1;
         newState.pictureid = pictureid;
+        if (newState.scoreCounter === 12){
+          alert("Congrats, you guessed them all!")
+          newState.clickedPictures = [];
+        newState.scoreCounter = 0;
+        newState.scoreMsg = "Play again! Reshuffling now...";
+        newState.pictures = this.shuffle(pictures);
+          
+
+        } else{
         newState.pictures = this.shuffle(pictures)
+        }
+       
       }
     }
     this.setState(newState);
-    // console.log(newState);
-    console.log(this.state);
   }
 
   render() {
